@@ -147,6 +147,7 @@ class wpide
 		if ( apply_filters( 'wpide_sidebar_folded', $hook_suffix === $this->menu_hook ) ) {
 	    	return  str_replace("auto-fold", "", $classes) . ' folded';
 		}
+	    	return $classes;
     }
     
     public function hide_wp_update_nag() {
